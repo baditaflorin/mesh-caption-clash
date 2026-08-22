@@ -49,3 +49,99 @@ body,
   opacity: 0.6;
   font-variant-numeric: tabular-nums;
 }
+
+.creative-app {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 5.5rem 1rem 3rem;
+}
+.creative-app h1 {
+  margin: 0.2rem 0;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
+.eyebrow {
+  color: var(--mesh-accent);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+.lede {
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--mesh-fg) 78%, transparent);
+}
+.composer {
+  display: flex;
+  gap: 0.65rem;
+  margin: 1.4rem 0;
+}
+.composer input {
+  min-height: 2.75rem;
+  border: 1px solid #536275;
+  border-radius: 0.65rem;
+  background: #131c29;
+  color: inherit;
+  padding: 0.6rem 0.8rem;
+  flex: 1;
+}
+button {
+  min-height: 2.75rem;
+  border: 0;
+  border-radius: 0.65rem;
+  padding: 0.6rem 0.85rem;
+  color: #07111f;
+  background: var(--mesh-accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.48;
+}
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+.prompt {
+  padding: 1.2rem;
+  border-left: 4px solid var(--mesh-accent);
+  background: #151d2a;
+  border-radius: 0.5rem;
+}
+.caption-list {
+  display: grid;
+  gap: 0.8rem;
+}
+.caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #314158;
+  border-radius: 0.8rem;
+  background: #111a28;
+}
+.caption p {
+  margin: 0;
+  line-height: 1.5;
+}
+.caption button {
+  background: #fbcfe8;
+}
+.subtle {
+  margin-top: 1rem;
+  background: #cbd5e1;
+}
+.status {
+  color: color-mix(in srgb, var(--mesh-fg) 65%, transparent);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
